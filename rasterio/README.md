@@ -1,8 +1,10 @@
 # Introduction 
 Rasterio: access to geospatial raster data. 
 
+# Installation 
 
-# Motivation 
+    conda install -c conda-forge rasterio
+
 
 
 # Topics 
