@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "gradient_boosting"
+version = "0.1.0"
+description = ""
+authors = ["laurafroelich <lafr@dhigroup.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.21.0"
+pandas = "^1.2.5"
+KTBoost = "^0.2.0"
+xgboost = "^1.4.2"
+ngboost = "^0.3.11"
+sklearn = "^0.0"
+plotly = "^5.0.0"
+matplotlib = "^3.4.2"
+catboost = "^0.26"
+jupyter = "^1.0.0"
+jupyterlab = "^3.0.16"
+pywin32 = "225"
+ipywidgets = "^7.6.3"
+ipympl = "^0.7.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
