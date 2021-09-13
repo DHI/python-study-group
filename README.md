@@ -13,3 +13,4 @@ This repo hosts the files used in the different sessions of the python study gro
 * Code documentation with Sphinx, JEM, 2021-6-2
 * Web apis with FastAPI, JAN, 2021-6-10
 * Gradient boosting, LAFR, 2021-6-24
+* Ipywidgets, LNDR, 2021-9-16
