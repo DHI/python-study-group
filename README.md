@@ -13,4 +13,4 @@ This repo hosts the files used in the different sessions of the python study gro
 * Code documentation with Sphinx, JEM, 2021-6-2
 * Web apis with FastAPI, JAN, 2021-6-10
 * Gradient boosting, LAFR, 2021-6-24
-* Ipywidgets, LNDR, 2021-9-16
+* [Ipywidgets](ipywidgets) basics. Use case: [anomaly detection](https://dhigroup.visualstudio.com/Blue/_git/anomalydetection?version=GBmaster&path=%2Fnotebooks), LNDR, 2021-9-16
