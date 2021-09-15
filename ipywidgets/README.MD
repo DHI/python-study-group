@@ -14,7 +14,7 @@ To access a DHI relevant example.
 1. clone the azure repository anomalydetection
 
 
-    git clone anomalydetection
+    git clone https://dhigroup.visualstudio.com/Blue/_git/anomalydetection
    
 2. navigate a console to directory. 
    
