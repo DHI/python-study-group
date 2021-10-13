@@ -105,3 +105,6 @@ venv.bak/
 
 # PyCharm
 .idea
+animation/data/*.csv
+animation/*.gif
+animation/*.mp4
