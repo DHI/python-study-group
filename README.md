@@ -14,3 +14,13 @@ This repo hosts the files used in the different sessions of the python study gro
 * Web apis with FastAPI, JAN, 2021-6-10
 * Gradient boosting, LAFR, 2021-6-24
 * [Ipywidgets](ipywidgets) basics. Use case: [anomaly detection](https://dhigroup.visualstudio.com/Blue/_git/anomalydetection?version=GBmaster&path=%2Fnotebooks), LNDR, 2021-9-16
+* Streamlit interactive apps, CLCR, 2021-9-30
+* Animations with matplotlib, AKF, 2021-10-14
+* DASK, JEM, 2021-11-9
+
+
+# Guidelines
+
+* Create a folder for each topic
+* No branching - commit directly to main
+ 
