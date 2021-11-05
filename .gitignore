@@ -108,3 +108,6 @@ venv.bak/
 animation/data/*.csv
 animation/*.gif
 animation/*.mp4
+
+# DASK
+dask-worker-space/
