@@ -24,3 +24,8 @@ This repo hosts the files used in the different sessions of the python study gro
 * Create a folder for each topic
 * No branching - commit directly to main
  
+
+# Random links
+
+* [SciPy2020 tutorials](https://www.scipy2020.scipy.org/tutorial-information)
+* [SciPy2021 tutorials](https://www.scipy2021.scipy.org/tutorial-information)
