@@ -1,6 +1,6 @@
 # DASK
 
-## DASK overview
+## DASK introduction
 
 \[ snip from [docs.dask.org](https://docs.dask.org/) \]
 
@@ -33,4 +33,26 @@ Dask emphasizes the following virtues:
 * Datacamp course: [parallel-programming-with-dask-in-python](https://app.datacamp.com/learn/courses/parallel-programming-with-dask-in-python)
 
 
-## 
+## DASK overview
+
+Dask provides multi-core and distributed parallel execution on larger-than-memory datasets.
+
+We can think of Dask at a high and a low level
+
+*  **High level collections:**  Dask provides high-level Array, Bag, and DataFrame
+   collections that mimic NumPy, lists, and Pandas but can operate in parallel on
+   datasets that don't fit into memory.  Dask's high-level collections are
+   alternatives to NumPy and Pandas for large datasets.
+*  **Low Level schedulers:** Dask provides dynamic task schedulers that
+   execute task graphs in parallel.  These execution engines power the
+   high-level collections mentioned above but can also power custom,
+   user-defined workloads.  These schedulers are low-latency (around 1ms) and
+   work hard to run computations in a small memory footprint.  Dask's
+   schedulers are an alternative to direct use of `threading` or
+   `multiprocessing` libraries in complex cases or other task scheduling
+   systems like `Luigi` or `IPython parallel`.
+
+Different users operate at different levels but it is useful to understand
+both.
+
+The Dask [use cases](https://stories.dask.org/en/latest/) provides a number of sample workflows where Dask should be a good fit.
