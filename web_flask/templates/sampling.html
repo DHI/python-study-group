@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<script src="https://unpkg.com/htmx.org@1.6.0"></script>
+<script src='https://cdn.plot.ly/plotly-2.4.2.min.js'></script>
+
+<div class="row">
+    <h1>Sampling</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu dapibus lacus, sed fringilla justo. Sed gravida iaculis gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla lobortis lectus est, vitae interdum odio molestie sed. Nunc non tellus imperdiet, egestas lacus vel, placerat orci. Morbi velit orci, iaculis a nunc lacinia, molestie porta sem. Sed facilisis sit amet velit vitae placerat. Nullam porta quam vel ante blandit ultrices. Proin volutpat tincidunt rutrum. Nam molestie varius purus, sed pharetra risus vehicula vitae. Ut bibendum sapien eget tellus tincidunt tempor. Morbi interdum mattis odio id interdum. Vestibulum condimentum urna elit, eget posuere dolor iaculis nec. Cras suscipit, neque convallis vestibulum sollicitudin, augue lectus elementum turpis, vel aliquet sapien justo sed nisl. In lobortis lobortis mi, feugiat venenatis mi.
+    </p>
+
+    <p>
+        In hac habitasse platea dictumst. Proin vitae dolor justo. Etiam a felis nec lorem egestas egestas. Praesent et odio quis lectus ornare condimentum eget quis lorem. Phasellus mattis nec quam vel dignissim. Quisque sollicitudin ac massa quis aliquam. Fusce eu nisl varius, bibendum felis vitae, gravida quam. Praesent non leo orci. Maecenas fermentum, turpis id elementum dapibus, arcu urna faucibus felis, sed auctor justo arcu sit amet dolor. Suspendisse potenti. Suspendisse nulla sem, tincidunt et leo eu, lobortis sodales lacus. Praesent suscipit orci sit amet nulla viverra, sed auctor odio bibendum. Ut rhoncus diam id orci tincidunt molestie. Cras interdum ut risus quis placerat. Mauris auctor quam et massa euismod, eget ornare diam fermentum.
+    </p>
+
+    <h2>Number of samples:</h2>
+
+    <form action="/sampling" hx-get="/sampling" hx-target="#main" hx-select="#main" method="GET"> 
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="n" value="10" id="n_samples_10">
+        <label class="form-check-label" for="flexRadioDefault1">
+          10
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="n" value="100" id="n_samples_100">
+        <label class="form-check-label" for="flexRadioDefault2">
+          100
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">New sample</button>
+    </form>
+
+    <div id="main">
+
+        <div id="plot">
+            
+        </div>
+        <script>
+
+            var n_samples = {{n_samples}};
+        
+            radio_id = "n_samples_" + n_samples;
+            radio_btn = document.getElementById(radio_id).checked = true;
+            
+            var trace = {
+                x: {{ x }},
+                y: {{ samples }},
+                mode: 'markers',
+                type: 'scatter'
+            };
+        
+            var data = [trace];
+        
+            Plotly.newPlot('plot', data);
+        
+        </script>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

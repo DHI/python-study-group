@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<h2>Search results</h2>
+{% if empty %}
+    No results
+{% endif %}
+
+<ul>
+{% for x in results %}
+    <li>{{x}}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

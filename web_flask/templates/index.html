@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<style>
+    .card {
+        margin: 5px;
+        width: 18rem;
+    }
+</style>
+
+<div>
+
+    <div class="row">
+        <h1>Machine learning use examples</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">RBF Interpolation</h5>
+                <p class="card-text">Radial basis functions are useful for interpolating from a small number of scatter
+                    data</p>
+                <a href="/interpolation/rbf" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">IDW Interpolation</h5>
+                <p class="card-text">Inverse distance weighting is a simple and very common technique for interpolation
+                    from
+                    scatter data</p>
+                <a href="/interpolation/idw" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
